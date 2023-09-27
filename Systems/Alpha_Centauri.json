@@ -1,0 +1,430 @@
+ "systems": [
+  {
+	  "Name" : "Alpha Centauri",
+	  "planets": 
+	[
+		{
+			  "name": "Jemison",
+			  "type": "Rock",
+			  "gravity": 0.91,
+			  "temperature": "Temperate",
+			  "atmosphere": "STD O2",
+			  "magnetosphere": "Strong",
+			  "traits": ["UNK", "UNK", "UNK"],
+			  "has_fauna": true
+			  "has_flora": true
+			  "resources": {
+				"Water": true,
+				"Chlorine": true,
+				"Argon" : true,
+				"Lead" : true,
+				"Chlorosilanes" : true,
+			  },
+			  "fauna": [
+				{
+				  "name": "Pack Coralbug",
+				  "Temperament" : "Wary"
+				  "biomes": ["Mountains", "Deciduous Forest",],
+				  "resources": {
+					"Membrane": true
+				  }
+				},
+				{
+				  "name": "Herding Cutterhead Herbivore",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Mountains", "Deciduous Forest"],
+				  "resources": {
+					"Sealant": true
+				  }
+				},
+				{
+				  "name": "Carasnail Scavenger",
+				  "Temperament" : "Peaceful"
+				  "biomes": ["Mountains", "Deciduous Forest"],
+				  "resources": {
+					"Cosmetic": true
+				  }
+				},
+				{
+				  "name": "Flocking Seabat Geophage",
+				  "Temperament" : "Peaceful"
+				  "biomes": ["Mountains", "Deciduous Forest"],
+				  "resources": {
+					"Metabolic Agent": true
+				  }
+				},
+				{
+				  "name": "Hunting Tuskfrog",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Mountains", "Deciduous Forest"],
+				  "resources": {
+					"Sedative": true
+				  }
+				},
+				{
+				  "name": "Apex Parrothawk",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Frozen Mountains", "Mountains", "Deciduous Forest", "Coniferous Forest"],
+				  "resources": {
+					"Structural": true
+				  }
+				},
+				{
+				  "name": "Herding Reefwalker Scavenger",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Frozen Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Beetle Grazer",
+				  "Temperament" : "Skittish"
+				  "biomes": ["Frozen Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Metabolic Agent": true
+				  }
+				},
+				{
+				  "name": "Apex Crocodaunt",
+				  "Temperament" : "Territorial"
+				  "biomes": ["Frozen Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Spice": true
+				  }
+				},
+				// Add more fauna if needed
+			  ],
+			  "flora": [
+				{
+				  "name": "Aurora Palm",
+				  "biomes": ["Deciduous Forest", "Mountains",],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Glossy Stickweed",
+				  "biomes": ["Deciduous Forest", "Coniferous Forest", "Mountains"],
+				  "resources": {
+					"Structural": true
+				  }
+				},
+				{
+				  "name": "Cliff Laurel",
+				  "biomes": ["Frozen Mountains, "Mountains", "Deciduous Forest", "Coniferous Forest"],
+				  "resources": {
+					"Nutrient": true
+				  }
+				},
+				{
+				  "name": "Boreas Root",
+				  "biomes": ["Frozen Mountains, "Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Fiber": true
+				  }
+				},
+				{
+				  "name": "Broadleaf Roase",
+				  "biomes": ["Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Nutrient": true
+				  }
+				},
+				{
+				  "name": "Cold Cave Nettle",
+				  "biomes": ["Frozen Mountains, "Mountains"],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Spiral Creeper",
+				  "biomes": ["Deciduous Forest", "Coniferous Forest"],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Tufted Snow Willow",
+				  "biomes": ["Frozen Mountains, "Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Metabolic Agent": true
+				  }
+				},
+				// Add more flora if needed
+				
+			  ] // End Fauna/Flora for Jemison
+			  
+			{
+			  "name": "Kurtz",
+			  "type": "Barren",
+			  "gravity": 0.11,
+			  "temperature": "Temperate",
+			  "atmosphere": "None",
+			  "magnetosphere": "None",
+			  "traits": ["None"],
+			  "resources": {
+				"Helium-3": true,
+				"Aluminum": true,
+			  }
+			},
+			
+			{
+			  "name": "Bondar",
+			  "type": "Rock",
+			  "gravity": 1.84,
+			  "temperature": "Inferno",
+			  "atmosphere": "EXTR CO2",
+			  "magnetosphere": "Powerful",
+			  "traits": ["Charred Ecosystem", "UNK","UNK"],
+			  "resources": {
+				"Chlorine": true,
+				"Nickel": true,
+				"Lead" : true,
+				"Tungsten" : true,
+				"Platinum" : true,
+				"Xenon" : true,
+			  }
+			},
+			
+			{
+			  "name": "Grissom",
+			  "type": "Barren",
+			  "gravity": 0.29,
+			  "temperature": "Inferno",
+			  "atmosphere": "None",
+			  "magnetosphere": "None",
+			  "traits": ["None"],
+			  "resources": {
+				"Helium-3": true,
+				"Iron": true,
+			  }
+			},	
+			
+			{
+			  "name": "Curbeam",
+			  "type": "Barren",
+			  "gravity": 0.18,
+			  "temperature": "Inferno",
+			  "atmosphere": "None",
+			  "magnetosphere": "None",
+			  "traits": ["None"],
+			  "resources": {
+				"Helium-3": true,
+				"Aluminum": true,
+			  }
+			},
+		
+			{
+			  "name": "Hawley",
+			  "type": "Rock",
+			  "gravity": 0.50,
+			  "temperature": "Frozen",
+			  "atmosphere": "Thin M",
+			  "magnetosphere": "None",
+			  "traits": ["Pelted Fields"],
+			  "resources": {
+				"Water": true,
+				"Nickel": true,
+				"Lead" : true,
+				"Uranium" : true,
+				"Cobalt" : true,
+			  }
+			},
+			
+			{
+			  "name": "Zamka",
+			  "type": "Rock",
+			  "gravity": 0.42,
+			  "temperature": "Frozen",
+			  "atmosphere": "Thin M",
+			  "magnetosphere": "None",
+			  "traits": ["UNK","UNK"],
+			  "resources": {
+				"Water": true,
+				"Helium-3" : true,
+				"Copper": true,
+				"Nickel": true,
+				"Iron" : true,
+				"Uranium" : true,
+				"Cobalt" : true,
+				"Vanadium": true,
+			  }
+			},
+			
+			{
+			  "name": "Lovell",
+			  "type": "Ice",
+			  "gravity": 0.08,
+			  "temperature": "Frozen",
+			  "atmosphere": "None",
+			  "magnetosphere": "None",
+			  "traits": ["UNK"],
+			  "resources": {
+				"Water": true,
+				"Nickel": true,
+				"Cobalt" : true,
+			  }
+			},
+			{
+			  "name": "Chawla",
+			  "type": "Ice",
+			  "gravity": 0.43,
+			  "temperature": "Frozen",
+			  "atmosphere": "Thin CO2",
+			  "magnetosphere": "None",
+			  "traits": ["None"],
+			  "resources": {
+				"Water": true,
+				"Argon": true,
+				"Benzene" : true,
+			  }
+			},
+			{
+			  "name": "Voss",
+			  "type": "Rock",
+			  "gravity": 0.41,
+			  "temperature": "Frozen",
+			  "atmosphere": "Thin N2",
+			  "magnetosphere": "None",
+			  "traits": ["Solar Storm Seasons"],
+			  "resources": {
+				"Water": true,
+				"Nickel": true,
+				"Lead" : true,
+				"Uranium" : true,
+				"Cobalt" : true,
+				"Tungsten" : true,
+				"Vanadium" : true,
+				"Dysprosium" : true,
+			  }
+			},
+			{
+			  "name": "Gagarin",
+			  "type": "Rock",
+			  "gravity": 0.89,
+			  "temperature": "Temperate",
+			  "atmosphere": "High O2",
+			  "magnetosphere": "Powerful",
+			  "traits": ["Coralline Landmass"],
+			  "resources": {
+				"Water": true,
+				"Chlorine": true,
+				"Lead" : true,
+				"Chlorosilanes" : true,
+			  }
+			  	"fauna": [
+				{
+				  "name": "Flocking Coralcrawler Geophase",
+				  "Temperament" : "Wary"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Nutrient": true
+				  }
+				},
+				{
+				  "name": "Apex Dust Devil Exorunner",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Antimicrobial": true
+				  }
+				},
+				{
+				  "name": "Herding Coralbucket Filterer",
+				  "Temperament" : "Territorial"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Cosmetic": true
+				  }
+				},
+				{
+				  "name": "Pack Prong Wing Seabat",
+				  "Temperament" : "Wary"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Metabolic Agent": true
+				  }
+				},
+				{
+				  "name": "Flocking Shardhopper Geophage",
+				  "Temperament" : "Wary"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Trilobite Scavenger",
+				  "Temperament" : "Skittish"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Spice": true
+				  }
+				},
+				{
+				  "name": "UNK",
+				  "Temperament" : "UNK"
+				  "biomes": ["UNK"],
+				  "resources": {
+					"UNK": true
+				  }
+				},
+				{
+				  "name": "UNK",
+				  "Temperament" : "UNK"
+				  "biomes": ["UNK"],
+				  "resources": {
+					"UNK": true
+				  }
+				},
+				// Add more fauna if needed
+			  ],
+			  "flora": [
+				{
+				  "name": "Sweetwater Cactus",
+				  "biomes": ["Swamp", "Rocky Desert"],
+				  "outpost" : true
+				  "inputs" : ["Water"]
+				  "resources": {
+					"Adhesive": true
+				  }
+				},
+				{
+				  "name": "Velvet Bloom",
+				  "biomes": ["Swamp","Wetlands"],
+				  "resources": {
+					"Fiber": true
+				  }
+				},
+				{
+				  "name": "Swamp Bottle Root",
+				  "biomes": ["Swamp","Wetlands"],
+				  "outpost" : true
+				  "inputs" : ["Water"]
+				  "resources": {
+					"Sealant": true
+				  }
+				},
+				{
+				  "name": "UNK",
+				  "biomes": ["UNK"],
+				  "resources": {
+					"UNK": true
+				  }
+				},
+				{
+				  "name": "UNK",
+				  "biomes": ["UNK"],
+				  "resources": {
+					"UNK": true
+				  }
+				},
+				// Add more flora if needed
+				
+			  ] // End Fauna/Flora for Gagarin
+			}, // End Gagarin
+	
+		}
+	]

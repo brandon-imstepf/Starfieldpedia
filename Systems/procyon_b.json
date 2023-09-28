@@ -1,21 +1,19 @@
-"systems": [
-  {
-    "Name": "Procyon B",
-    "planets": [
-      {
-        "name": "Procyon-B I",
-        "type": "Barren",
-        "gravity": 0.21,
-        "temperature": "Scorched",
-        "atmosphere": "None",
-        "magnetosphere": "None",
-        "traits": ["UNK","UNK","UNK","UNK","UNK"],
-        "resources": {
-          "Helium-3": true,
-          "Aluminum": true,
-		  "Neodymium":true
-        }
-      }
-    ]
-  }
-]
+{
+	"systems": [{
+		"Name": "Procyon B",
+		"planets": [{
+			"name": "Procyon-B I",
+			"type": "Barren",
+			"gravity": 0.21,
+			"temperature": "Scorched",
+			"atmosphere": "None",
+			"magnetosphere": "None",
+			"traits": ["UNK", "UNK", "UNK", "UNK", "UNK"],
+			"resources": {
+				"Helium-3": true,
+				"Aluminum": true,
+				"Neodymium": true
+			}
+		}]
+	}]
+}

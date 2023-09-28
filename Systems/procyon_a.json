@@ -1,309 +1,304 @@
-"systems": [
-  {
-    "Name": "Procyon A",
-    "planets": [
-      {
-        "name": "Procyon I",
-        "type": "Rock",
-        "gravity": 1.24,
-        "temperature": "Inferno",
-        "atmosphere": "STD CO2",
-        "magnetosphere": "Average",
-        "traits": ["UNK"],
-		"extreme": 1,
-        "resources": {
-          "Chlorine": true,
-		  "Copper": true,
-		  "Lead":true,
-		  "Uranium": true,
-		  "Chlorosilanes":true,
-		  "Flourine":true,
-		  "Tungsten":true,
-		  "Iridium":true
-        }
-      },
-      {
-        "name": "Procyon II",
-        "type": "Rock",
-        "gravity": 0.96,
-        "temperature": "Inferno",
-        "atmosphere": "EXTR CO2",
-        "magnetosphere": "Average",
-        "traits": ["UNK","UNK","UNK"],
-        "resources": {
-          "Titanium": true,
-          "Nickel": true,
-          "Lead": true,
-        }
-      },
-      {
-        "name": "Procyon IV",
-		"Notes": "Swampy earth-like planet populated entirely by insectoids. Very cool.",
-        "type": "Rock",
-        "gravity": 1.07,
-        "temperature": "Cold",
-        "atmosphere": "High O2",
-        "magnetosphere": "Average",
-        "traits": ["Gravitational Anomoly", "UNK","UNK"],
-        "resources": {
-          "Water": true,
-          "Copper": true,
-          "Argon": true,
-          "Flourine": true,
-		  "Tetraflourides": true,
-		  "Ionic Liquids":true,
-		  "Neon":true
-        },
-        "fauna": [
-          {
-            "name": "Herding Crabfly Grazer",
-            "Temperament": "Wary",
-            "biomes": ["Frozen Plains"],
-			"outpost" : true,
-            "resources": {
-              "Metabolic Agent": true
-            }
-          },
-          {
-            "name": "Hunting Shieldshell",
-            "Temperament": "Fearless",
-            "biomes": ["Frozen Plains"],
-            "resources": {
-              "Spice": true
-            }
-          },
-          {
-            "name": "Template Fauna",
-            "Temperament": "Wary",
-            "biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
-            "resources": {
-              "Nutrient": true
-            }
-          },
-          {
-            "name": "Template Fauna",
-            "Temperament": "Wary",
-            "biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
-            "resources": {
-              "Nutrient": true
-            }
-          },
-          {
-            "name": "Template Fauna",
-            "Temperament": "Wary",
-            "biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
-            "resources": {
-              "Nutrient": true
-            }
-          },
-          {
-            "name": "Template Fauna",
-            "Temperament": "Wary",
-            "biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
-            "resources": {
-              "Nutrient": true
-            }
-          },
-          {
-            "name": "Template Fauna",
-            "Temperament": "Wary",
-            "biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
-            "resources": {
-              "Nutrient": true
-            }
-          },
-          {
-            "name": "Template Fauna",
-            "Temperament": "Wary",
-            "biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
-            "resources": {
-              "Nutrient": true
-            }
-          },
-          {
-            "name": "Template Fauna",
-            "Temperament": "Wary",
-            "biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
-            "resources": {
-              "Nutrient": true
-            }
-          },
-          {
-            "name": "Template Fauna",
-            "Temperament": "Wary",
-            "biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
-            "resources": {
-              "Nutrient": true
-            }
-          }
-          // Add more fauna if needed
-        ],
-        "flora": [
-          {
-            "name": "Cold Cave Nettle",
-            "biomes": ["Frozen Plains"],
-            "outpost": true,
-            "inputs": ["Water"],
-            "resources": {
-              "Sealant": true
-            }
-          },
-          {
-            "name": "Frost Reed",
-            "biomes": ["Frozen Plains"],
-            "outpost": true,
-            "inputs": ["Water"],
-            "resources": {
-              "Fiber": true
-            }
-          },
-          {
-            "name": "Template Flora",
-            "biomes": ["Swamp", "Rocky Desert"],
-            "outpost": true,
-            "inputs": ["Water"],
-            "resources": {
-              "Adhesive": true
-            }
-          },
-          {
-            "name": "Template Flora",
-            "biomes": ["Swamp", "Rocky Desert"],
-            "outpost": true,
-            "inputs": ["Water"],
-            "resources": {
-              "Adhesive": true
-            }
-          },
-          {
-            "name": "Template Flora",
-            "biomes": ["Swamp", "Rocky Desert"],
-            "outpost": true,
-            "inputs": ["Water"],
-            "resources": {
-              "Adhesive": true
-            }
-          }
-          // Add more flora if needed
-        ]
-      },
-	  {
-        "name": "Procyon IV",
-        "type": "Rock",
-        "gravity": 1.16,
-        "temperature": "Cold",
-        "atmosphere": "HIGH N2",
-        "magnetosphere": "Average",
-        "traits": ["Frozen Ecosystem","Gravitational Anomoly","UNK","UNK"],
-        "resources": {
-          "Water": true,
-          "Nickel": true,
-          "Uranium": true,
-		  "Cobalt": true
-        }
-      },
-	  {
-        "name": "Procyon IV-a",
-        "type": "Barren",
-        "gravity": 0.25,
-        "temperature": "Cold",
-        "atmosphere": "None",
-        "magnetosphere": "None",
-        "traits": ["Bolide Bombardment"],
-        "resources": {
-          "Helium-3": true,
-          "Aluminum": true,
-        }
-      },
-	  {
-        "name": "Procyon V-a",
-        "type": "Ice",
-        "gravity": 0.14,
-        "temperature": "Frozen",
-        "atmosphere": "None",
-        "magnetosphere": "None",
-        "traits": ["UNK"],
-        "resources": {
-          "Water": true,
-          "Nickel": true,
-		  "Cobalt": true
-        }
-      },
-	  {
-        "name": "Procyon V-b",
-        "type": "Ice",
-        "gravity": 0.31,
-        "temperature": "Frozen",
-        "atmosphere": "None",
-        "magnetosphere": "None",
-        "traits": ["UNK"],
-        "resources": {
-          "Water": true,
-          "Nickel": true,
-        }
-      },
-	  {
-        "name": "Procyon V-c",
-        "type": "Ice",
-        "gravity": 0.27,
-        "temperature": "Frozen",
-        "atmosphere": "None",
-        "magnetosphere": "None",
-        "traits": ["None"],
-        "resources": {
-          "Water": true,
-          "Argon": true,
-		  "Benzene": true,
-		  "Xenon": true
-        }
-      },
-	  {
-        "name": "Procyon VI-a",
-        "type": "Ice",
-        "gravity": 0.06,
-        "temperature": "Deep Freeze",
-        "atmosphere": "None",
-        "magnetosphere": "None",
-        "traits": ["Gaseous Font"],
-        "resources": {
-          "Water": true,
-          "Copper": true
-        }
-      },
-	  {
-        "name": "Procyon VI-b",
-        "type": "Rock",
-        "gravity": 0.53,
-        "temperature": "Frozen",
-        "atmosphere": "STD O2",
-        "magnetosphere": "Average",
-        "traits": ["UNK"],
-        "resources": {
-          "Water": true,
-          "Iron": true,
-		  "Lead":true,
-		  "Argon":true,
-		  "Benzene":true,
-		  "Carboxylic Acids":true
-        }
-      },
-	  {
-        "name": "Procyon VI-c",
-        "type": "Rock",
-        "gravity": 0.34,
-        "temperature": "Frozen",
-        "atmosphere": "Thin CO2",
-        "magnetosphere": "None",
-        "traits": ["None"],
-        "resources": {
-          "Water": true,
-		  "Copper":true,
-		  "Nickel":true,
-          "Iron": true,
-		  "Uranium":true,
-		  "Alkanes":true
-        }
-      },
-    ]
-  }
-]
+{
+	"systems": [{
+		"Name": "Procyon A",
+		"planets": [{
+				"name": "Procyon I",
+				"type": "Rock",
+				"gravity": 1.24,
+				"temperature": "Inferno",
+				"atmosphere": "STD CO2",
+				"magnetosphere": "Average",
+				"traits": ["UNK"],
+				"extreme": 1,
+				"resources": {
+					"Chlorine": true,
+					"Copper": true,
+					"Lead": true,
+					"Uranium": true,
+					"Chlorosilanes": true,
+					"Flourine": true,
+					"Tungsten": true,
+					"Iridium": true
+				}
+			},
+			{
+				"name": "Procyon II",
+				"type": "Rock",
+				"gravity": 0.96,
+				"temperature": "Inferno",
+				"atmosphere": "EXTR CO2",
+				"magnetosphere": "Average",
+				"traits": ["UNK", "UNK", "UNK"],
+				"resources": {
+					"Titanium": true,
+					"Nickel": true,
+					"Lead": true
+				}
+			},
+			{
+				"name": "Procyon IV",
+				"Notes": "Swampy earth-like planet populated entirely by insectoids. Very cool.",
+				"type": "Rock",
+				"gravity": 1.07,
+				"temperature": "Cold",
+				"atmosphere": "High O2",
+				"magnetosphere": "Average",
+				"traits": ["Gravitational Anomoly", "UNK", "UNK"],
+				"resources": {
+					"Water": true,
+					"Copper": true,
+					"Argon": true,
+					"Flourine": true,
+					"Tetraflourides": true,
+					"Ionic Liquids": true,
+					"Neon": true
+				},
+				"fauna": [{
+						"name": "Herding Crabfly Grazer",
+						"Temperament": "Wary",
+						"biomes": ["Frozen Plains"],
+						"outpost": true,
+						"resources": {
+							"Metabolic Agent": true
+						}
+					},
+					{
+						"name": "Hunting Shieldshell",
+						"Temperament": "Fearless",
+						"biomes": ["Frozen Plains"],
+						"resources": {
+							"Spice": true
+						}
+					},
+					{
+						"name": "Template Fauna",
+						"Temperament": "Wary",
+						"biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
+						"resources": {
+							"Nutrient": true
+						}
+					},
+					{
+						"name": "Template Fauna",
+						"Temperament": "Wary",
+						"biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
+						"resources": {
+							"Nutrient": true
+						}
+					},
+					{
+						"name": "Template Fauna",
+						"Temperament": "Wary",
+						"biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
+						"resources": {
+							"Nutrient": true
+						}
+					},
+					{
+						"name": "Template Fauna",
+						"Temperament": "Wary",
+						"biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
+						"resources": {
+							"Nutrient": true
+						}
+					},
+					{
+						"name": "Template Fauna",
+						"Temperament": "Wary",
+						"biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
+						"resources": {
+							"Nutrient": true
+						}
+					},
+					{
+						"name": "Template Fauna",
+						"Temperament": "Wary",
+						"biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
+						"resources": {
+							"Nutrient": true
+						}
+					},
+					{
+						"name": "Template Fauna",
+						"Temperament": "Wary",
+						"biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
+						"resources": {
+							"Nutrient": true
+						}
+					},
+					{
+						"name": "Template Fauna",
+						"Temperament": "Wary",
+						"biomes": ["Swamp", "Rocky Desert", "Wetlands", "Mountains", "Coniferous Forest", "Deciduous Forest", "Frozen Mountains"],
+						"resources": {
+							"Nutrient": true
+						}
+					}
+				],
+				"flora": [{
+						"name": "Cold Cave Nettle",
+						"biomes": ["Frozen Plains"],
+						"outpost": true,
+						"inputs": ["Water"],
+						"resources": {
+							"Sealant": true
+						}
+					},
+					{
+						"name": "Frost Reed",
+						"biomes": ["Frozen Plains"],
+						"outpost": true,
+						"inputs": ["Water"],
+						"resources": {
+							"Fiber": true
+						}
+					},
+					{
+						"name": "Template Flora",
+						"biomes": ["Swamp", "Rocky Desert"],
+						"outpost": true,
+						"inputs": ["Water"],
+						"resources": {
+							"Adhesive": true
+						}
+					},
+					{
+						"name": "Template Flora",
+						"biomes": ["Swamp", "Rocky Desert"],
+						"outpost": true,
+						"inputs": ["Water"],
+						"resources": {
+							"Adhesive": true
+						}
+					},
+					{
+						"name": "Template Flora",
+						"biomes": ["Swamp", "Rocky Desert"],
+						"outpost": true,
+						"inputs": ["Water"],
+						"resources": {
+							"Adhesive": true
+						}
+					}
+				]
+			},
+			{
+				"name": "Procyon IV",
+				"type": "Rock",
+				"gravity": 1.16,
+				"temperature": "Cold",
+				"atmosphere": "HIGH N2",
+				"magnetosphere": "Average",
+				"traits": ["Frozen Ecosystem", "Gravitational Anomoly", "UNK", "UNK"],
+				"resources": {
+					"Water": true,
+					"Nickel": true,
+					"Uranium": true,
+					"Cobalt": true
+				}
+			},
+			{
+				"name": "Procyon IV-a",
+				"type": "Barren",
+				"gravity": 0.25,
+				"temperature": "Cold",
+				"atmosphere": "None",
+				"magnetosphere": "None",
+				"traits": ["Bolide Bombardment"],
+				"resources": {
+					"Helium-3": true,
+					"Aluminum": true
+				}
+			},
+			{
+				"name": "Procyon V-a",
+				"type": "Ice",
+				"gravity": 0.14,
+				"temperature": "Frozen",
+				"atmosphere": "None",
+				"magnetosphere": "None",
+				"traits": ["UNK"],
+				"resources": {
+					"Water": true,
+					"Nickel": true,
+					"Cobalt": true
+				}
+			},
+			{
+				"name": "Procyon V-b",
+				"type": "Ice",
+				"gravity": 0.31,
+				"temperature": "Frozen",
+				"atmosphere": "None",
+				"magnetosphere": "None",
+				"traits": ["UNK"],
+				"resources": {
+					"Water": true,
+					"Nickel": true
+				}
+			},
+			{
+				"name": "Procyon V-c",
+				"type": "Ice",
+				"gravity": 0.27,
+				"temperature": "Frozen",
+				"atmosphere": "None",
+				"magnetosphere": "None",
+				"traits": ["None"],
+				"resources": {
+					"Water": true,
+					"Argon": true,
+					"Benzene": true,
+					"Xenon": true
+				}
+			},
+			{
+				"name": "Procyon VI-a",
+				"type": "Ice",
+				"gravity": 0.06,
+				"temperature": "Deep Freeze",
+				"atmosphere": "None",
+				"magnetosphere": "None",
+				"traits": ["Gaseous Font"],
+				"resources": {
+					"Water": true,
+					"Copper": true
+				}
+			},
+			{
+				"name": "Procyon VI-b",
+				"type": "Rock",
+				"gravity": 0.53,
+				"temperature": "Frozen",
+				"atmosphere": "STD O2",
+				"magnetosphere": "Average",
+				"traits": ["UNK"],
+				"resources": {
+					"Water": true,
+					"Iron": true,
+					"Lead": true,
+					"Argon": true,
+					"Benzene": true,
+					"Carboxylic Acids": true
+				}
+			},
+			{
+				"name": "Procyon VI-c",
+				"type": "Rock",
+				"gravity": 0.34,
+				"temperature": "Frozen",
+				"atmosphere": "Thin CO2",
+				"magnetosphere": "None",
+				"traits": ["None"],
+				"resources": {
+					"Water": true,
+					"Copper": true,
+					"Nickel": true,
+					"Iron": true,
+					"Uranium": true,
+					"Alkanes": true
+				}
+			}
+		]
+	}]
+}

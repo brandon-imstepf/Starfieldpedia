@@ -1,26 +1,24 @@
-"systems": [
-  {
-    "Name": "Luyten's Star",
-    "planets": [
-      {
-        "name": "Luyten's Rock",
-        "type": "Rock",
-        "gravity": 1.30,
-        "temperature": "Temperate",
-        "atmosphere": "STD CO2",
-        "magnetosphere": "Weak",
-        "traits": ["UNK","UNK","UNK"],
-        "resources": {
-          "Helium-3": true,
-		  "Water":true,
-		  "Chlorine":true,
-		  "Iron":true,
-		  "Argon":true,
-		  "Alkanes":true,
-		  "Lithium":true,
-		  "Tantalum":true
-        }
-      }
-    ]
-  }
-]
+{
+	"systems": [{
+		"Name": "Luyten's Star",
+		"planets": [{
+			"name": "Luyten's Rock",
+			"type": "Rock",
+			"gravity": 1.30,
+			"temperature": "Temperate",
+			"atmosphere": "STD CO2",
+			"magnetosphere": "Weak",
+			"traits": ["UNK", "UNK", "UNK"],
+			"resources": {
+				"Helium-3": true,
+				"Water": true,
+				"Chlorine": true,
+				"Iron": true,
+				"Argon": true,
+				"Alkanes": true,
+				"Lithium": true,
+				"Tantalum": true
+			}
+		}]
+	}]
+}

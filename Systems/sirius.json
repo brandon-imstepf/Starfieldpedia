@@ -1,4 +1,5 @@
-"systems": [
+{
+	"systems": [
   {
     "Name": "Sirius",
     "planets": [
@@ -87,3 +88,91 @@
     ]
   }
 ]
+}{
+	"systems": [{
+		"Name": "Sirius",
+		"planets": [{
+				"name": "Sirius I",
+				"type": "Barren",
+				"gravity": 0.54,
+				"temperature": "Inferno",
+				"atmosphere": "None",
+				"magnetosphere": "None",
+				"traits": ["UNK"],
+				"resources": {
+					"Helium-3": true,
+					"Iron": true,
+					"Alkanes": true
+				}
+			},
+			{
+				"name": "Sirius II",
+				"type": "Rock",
+				"gravity": 1.38,
+				"temperature": "Cold",
+				"atmosphere": "STD M",
+				"magnetosphere": "Average",
+				"traits": ["Slushy Subsurface Seas", "UNK"],
+				"resources": {
+					"Water": true,
+					"Chlorine": true,
+					"Nickel": true,
+					"Uranium": true,
+					"Chlorosilanes": true,
+					"Iridium": true,
+					"Lithium": true,
+					"Xenon": true
+				}
+			},
+			{
+				"name": "Sirius II-a",
+				"type": "Rock",
+				"gravity": 0.35,
+				"temperature": "Cold",
+				"atmosphere": "Thin CO2",
+				"magnetosphere": "None",
+				"traits": ["Pelted Fields"],
+				"resources": {
+					"Water": true,
+					"Helium-3": true,
+					"Iron": true,
+					"Uranium": true,
+					"Argon": true,
+					"Benzene": true
+				}
+			},
+			{
+				"name": "Sirius III-a",
+				"type": "Rock",
+				"gravity": 0.42,
+				"temperature": "Cold",
+				"atmosphere": "Thin N2",
+				"magnetosphere": "None",
+				"traits": ["None"],
+				"resources": {
+					"Water": true,
+					"Aluminum": true,
+					"Chlorine": true,
+					"Copper": true,
+					"Flourine": true,
+					"Lithium": true
+				}
+			},
+			{
+				"name": "Sirius III-b",
+				"type": "Ice",
+				"gravity": 0.07,
+				"temperature": "Frozen",
+				"atmosphere": "None",
+				"magnetosphere": "None",
+				"traits": ["Crystalline Crust"],
+				"resources": {
+					"Water": true,
+					"Chlorine": true,
+					"Chlorosilanes": true,
+					"Lithium": true
+				}
+			}
+		]
+	}]
+}

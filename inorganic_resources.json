@@ -1,0 +1,331 @@
+{
+    "Aldumite": {
+        "element_name": "Ad",
+        "rarity": 4,
+        "state_of_matter": "Solid",
+        "weight": 1.9,
+        "value": 84
+    },
+    "Alkanes": {
+        "element_name": "HnCn",
+        "rarity": 1,
+        "state_of_matter": "Gas",
+        "weight": 0.6,
+        "value": 13
+    },
+    "Aluminum": {
+        "element_name": "Al",
+        "rarity": 0,
+        "state_of_matter": "Solid",
+        "weight": 0.5,
+        "value": 7
+    },
+    "Antimony": {
+        "element_name": "Sb",
+        "rarity": 3,
+        "state_of_matter": "Solid",
+        "weight": 0.8,
+        "value": 30
+    },
+    "Argon": {
+        "element_name": "Ar",
+        "rarity": 0,
+        "state_of_matter": "Gas",
+        "weight": 0.5,
+        "value": 5
+    },
+    "Benzene": {
+        "element_name": "C6Hn",
+        "rarity": 1,
+        "state_of_matter": "Gas",
+        "weight": 0.6,
+        "value": 19
+    },
+    "Beryllium": {
+        "element_name": "Be",
+        "rarity": 1,
+        "state_of_matter": "Solid",
+        "weight": 0.5,
+        "value": 12
+    },
+    "Caelumite": {
+        "element_name": "Ct",
+        "rarity": 3,
+        "state_of_matter": "Solid",
+        "weight": 0.3,
+        "value": 264
+    },
+    "Caesium": {
+        "element_name": "Cs",
+        "rarity": 3,
+        "state_of_matter": "Fluid",
+        "weight": 0.8,
+        "value": 25
+    },
+    "Carboxylic Acids": {
+        "element_name": "R-COC",
+        "rarity": 2,
+        "state_of_matter": "Fluid",
+        "weight": 0.8,
+        "value": 12
+    },
+    "Chlorine": {
+        "element_name": "Cl",
+        "rarity": 0,
+        "state_of_matter": "Gas",
+        "weight": 0.5,
+        "value": 6
+    },
+    "Chlorosilanes": {
+        "element_name": "SiH3Cl",
+        "rarity": 1,
+        "state_of_matter": "Fluid",
+        "weight": 0.6,
+        "value": 14
+    },
+    "Cobalt": {
+        "element_name": "Co",
+        "rarity": 1,
+        "state_of_matter": "Solid",
+        "weight": 0.6,
+        "value": 12
+    },
+    "Copper": {
+        "element_name": "Cu",
+        "rarity": 0,
+        "state_of_matter": "Solid",
+        "weight": 0.6,
+        "value": 10
+    },
+    "Dysprosium": {
+        "element_name": "Dy",
+        "rarity": 3,
+        "state_of_matter": "Solid",
+        "weight": 1.4,
+        "value": 56
+    },
+    "Europium": {
+        "element_name": "Eu",
+        "rarity": 3,
+        "state_of_matter": "Solid",
+        "weight": 1,
+        "value": 40
+    },
+    "Fluorine": {
+        "element_name": "F",
+        "rarity": 1,
+        "state_of_matter": "Gas",
+        "weight": 0.5,
+        "value": 12
+    },
+    "Gold": {
+        "element_name": "Au",
+        "rarity": 2,
+        "state_of_matter": "Solid",
+        "weight": 0.8,
+        "value": 24
+    },
+    "Helium-3": {
+        "element_name": "He-3",
+        "rarity": 0,
+        "state_of_matter": "Gas",
+        "weight": 0.5,
+        "value": 5
+    },
+    "Indicite": {
+        "element_name": "Ie",
+        "rarity": 4,
+        "state_of_matter": "Solid",
+        "weight": 2.3,
+        "value": 108
+    },
+    "Ionic Liquids": {
+        "element_name": "IL",
+        "rarity": 3,
+        "state_of_matter": "Fluid",
+        "weight": 0.8,
+        "value": 23
+    },
+    "Iridium": {
+        "element_name": "Ir",
+        "rarity": 1,
+        "state_of_matter": "Solid",
+        "weight": 0.7,
+        "value": 14
+    },
+    "Iron": {
+        "element_name": "Fe",
+        "rarity": 0,
+        "state_of_matter": "Solid",
+        "weight": 0.6,
+        "value": 8
+    },
+    "Lead": {
+        "element_name": "Pb",
+        "rarity": 0,
+        "state_of_matter": "Solid",
+        "weight": 0.7,
+        "value": 10
+    },
+    "Lithium": {
+        "element_name": "Li",
+        "rarity": 2,
+        "state_of_matter": "Solid",
+        "weight": 0.5,
+        "value": 14
+    },
+    "Mercury": {
+        "element_name": "Hg",
+        "rarity": 2,
+        "state_of_matter": "Fluid",
+        "weight": 0.8,
+        "value": 22
+    },
+    "Neodymium": {
+        "element_name": "Nd",
+        "rarity": 2,
+        "state_of_matter": "Solid",
+        "weight": 0.8,
+        "value": 20
+    },
+    "Neon": {
+        "element_name": "Ne",
+        "rarity": 3,
+        "state_of_matter": "Gas",
+        "weight": 0.5,
+        "value": 16
+    },
+    "Nickel": {
+        "element_name": "Ni",
+        "rarity": 0,
+        "state_of_matter": "Solid",
+        "weight": 0.6,
+        "value": 10
+    },
+    "Palladium": {
+        "element_name": "Pd",
+        "rarity": 3,
+        "state_of_matter": "Solid",
+        "weight": 0.7,
+        "value": 25
+    },
+    "Platinum": {
+        "element_name": "Pt",
+        "rarity": 2,
+        "state_of_matter": "Solid",
+        "weight": 0.8,
+        "value": 24
+    },
+    "Plutonium": {
+        "element_name": "Pu",
+        "rarity": 2,
+        "state_of_matter": "Solid",
+        "weight": 1.6,
+        "value": 64
+    },
+    "Rothicite": {
+        "element_name": "Rc",
+        "rarity": 4,
+        "state_of_matter": "?",
+        "weight": 2.2,
+        "value": 106
+    },
+    "Silver": {
+        "element_name": "Ag",
+        "rarity": 1,
+        "state_of_matter": "Solid",
+        "weight": 0.6,
+        "value": 20
+    },
+    "Tantalum": {
+        "element_name": "Ta",
+        "rarity": 2,
+        "state_of_matter": "Solid",
+        "weight": 0.9,
+        "value": 23
+    },
+    "Tasine": {
+        "element_name": "Tsn",
+        "rarity": 4,
+        "state_of_matter": "Fluid",
+        "weight": 1.2,
+        "value": 52
+    },
+    "Tetrafluorides": {
+        "element_name": "xF4",
+        "rarity": 2,
+        "state_of_matter": "Gas",
+        "weight": 0.7,
+        "value": 18
+    },
+    "Titanium": {
+        "element_name": "Ti",
+        "rarity": 2,
+        "state_of_matter": "Solid",
+        "weight": 0.5,
+        "value": 12
+    },
+    "Tungsten": {
+        "element_name": "W",
+        "rarity": 1,
+        "state_of_matter": "Solid",
+        "weight": 0.7,
+        "value": 16
+    },
+    "Uranium": {
+        "element_name": "U",
+        "rarity": 1,
+        "state_of_matter": "Solid",
+        "weight": 0.7,
+        "value": 14
+    },
+    "Vanadium": {
+        "element_name": "V",
+        "rarity": 2,
+        "state_of_matter": "Solid",
+        "weight": 0.7,
+        "value": 24
+    },
+    "Veryl": {
+        "element_name": "Vr",
+        "rarity": 4,
+        "state_of_matter": "?",
+        "weight": 0.9,
+        "value": 40
+    },
+    "Vytinium": {
+        "element_name": "Vy",
+        "rarity": 4,
+        "state_of_matter": "?",
+        "weight": 2.5,
+        "value": 116
+    },
+    "Water": {
+        "element_name": "H2O",
+        "rarity": 0,
+        "state_of_matter": "Fluid",
+        "weight": 0.5,
+        "value": 4
+    },
+    "Xenon": {
+        "element_name": "Xe",
+        "rarity": 3,
+        "state_of_matter": "Gas",
+        "weight": 0.8,
+        "value": 27
+    },
+    "Ytterbium": {
+        "element_name": "Yb",
+        "rarity": 3,
+        "state_of_matter": "Solid",
+        "weight": 1.2,
+        "value": 38
+    },
+    "Aqueous Hematite": {
+        "element_name": "??",
+        "rarity": 4,
+        "state_of_matter": "Solid",
+        "weight": 1.3,
+        "value": 56
+    }
+}

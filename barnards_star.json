@@ -1,0 +1,21 @@
+"systems": [
+  {
+    "Name": "Barnard's Star",
+    "planets": [
+      {
+        "name": "Frost",
+        "type": "Rock",
+        "gravity": 1.58,
+        "temperature": "Deep Freeze",
+        "atmosphere": "EXTR N2",
+        "magnetosphere": "Very Strong",
+        "traits": ["UNK,UNK"],
+        "resources": {
+          "Helium-3": true,
+          "Water": true,
+		  "Lead": true
+        }
+      },     
+    ]
+  }
+]

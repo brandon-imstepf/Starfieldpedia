@@ -1,0 +1,427 @@
+"systems": [
+  {
+    "Name": "Tau Ceti",
+    "planets": [
+      {
+        "name": "Tau Ceti I",
+        "type": "Rock",
+        "gravity": 1.53,
+        "temperature": "Inferno",
+        "atmosphere": "EXTR CO2",
+        "magnetosphere": "Powerful",
+        "traits": ["UNK"],
+        "resources": {
+          "Helium-3": true,
+		  "Copper": true,
+		  "Nickel":true,
+		  "Iron":true,
+		  "Uranium": true,
+		  "Platinum":true,
+		  "Vanadium":true,
+		  "Palladium":true
+        }
+      },
+      {
+        "name": "Tau Ceti II",
+        "type": "Rock",
+        "gravity": 1.00,
+        "temperature": "Temperate",
+        "atmosphere": "Thin O2",
+        "magnetosphere": "Average",
+        "traits": ["Aeriform Life", "Amphibious Foothold"],
+        "resources": {
+          "Water": true,
+          "Iron": true,
+          "Alkanes": true
+        },
+        "fauna": [
+          {
+            "name": "Hunting Aklyosaurus",
+            "Temperament": "Territorial",
+            "biomes": ["Hills"],
+			"outpost" : true,
+            "resources": {
+              "Sealant": true
+            }
+          },
+          {
+            "name": "Herding Bonemane Grazer",
+            "Temperament": "Wary",
+            "biomes": ["Hills"],
+			"outpost" : true,
+            "resources": {
+              "Nutrient": true
+            }
+          },
+          {
+            "name": "Eggback Herbivore",
+            "Temperament": "Skittish",
+            "biomes": ["Hills"],
+			"outpost":true,
+            "resources": {
+              "Solvent": true
+            }
+          },
+          {
+            "name": "Centiskull Filterer",
+            "Temperament": "Wary",
+            "biomes": ["Hills"]
+			"outpost":true,
+            "resources": {
+              "Fiber": true
+            }
+		  }
+          // Add more fauna if needed
+        ],
+        "flora": [
+          {
+            "name": "Crimson Gibbet",
+            "biomes": ["Hills"],
+            "outpost": false,
+            "resources": {
+              "Structural": true
+            }
+          },
+          {
+            "name": "Aruna Goldenglow",
+            "biomes": ["Hills"],
+            "outpost": false,
+            "resources": {
+              "Nutrient": true
+            }
+          },
+          {
+            "name": "Warren Nettle",
+            "biomes": ["Hills"],
+            "outpost": true,
+            "resources": {
+              "Toxin": true
+            }
+          }
+          // Add more flora if needed
+        ]
+		},
+      {
+        "name": "Tau Ceti II-a",
+        "type": "Barren",
+        "gravity": 0.17,
+        "temperature": "Temperate",
+        "atmosphere": "None",
+        "magnetosphere": "None",
+        "traits": ["None"],
+        "resources": {
+          "Helium-3": true,
+		  "Aluminum": true,
+		  "Neodymium":true
+        }
+      },
+	  {
+        "name": "Tau Ceti III",
+        "type": "Rock",
+        "gravity": 0.61,
+        "temperature": "Cold",
+        "atmosphere": "STD CO2",
+        "magnetosphere": "Average",
+        "traits": ["UNK","UNK"],
+        "resources": {
+          "Water": true,
+          "Chlorine": true,
+          "Copper": true,
+		  "Iron": true,
+		  "Alkanes":true,
+		  "Lithium":true,
+		  "Tetraflourides":true
+        }
+      },
+	  {
+        "name": "Tau Ceti IV",
+        "type": "Rock",
+        "gravity": 0.5,
+        "temperature": "Frozen",
+        "atmosphere": "Thin CO2",
+        "magnetosphere": "Weak",
+        "traits": ["None"],
+        "resources": {
+          "Water": true,
+          "Chlorine": true,
+		  "Copper":true,
+		  "Lead":true,
+		  "Chlorosilanes":true,
+		  "Flourine":true
+        }
+      },
+	  {
+        "name": "Tau Ceti IV-a",
+        "type": "Barren",
+        "gravity": 0.19,
+        "temperature": "Frozen",
+        "atmosphere": "None",
+        "magnetosphere": "None",
+        "traits": ["None"],
+        "resources": {
+          "Helium-3": true,
+          "Aluminum": true,
+		  "Beryllium": true
+        }
+      },
+	  {
+        "name": "Tau Ceti IV-b",
+        "type": "Barren",
+        "gravity": 0.07,
+        "temperature": "Frozen",
+        "atmosphere": "None",
+        "magnetosphere": "None",
+        "traits": ["None"],
+        "resources": {
+          "Helium-3": true,
+          "Iron": true
+        }
+      },
+	  {
+        "name": "Tau Ceti V",
+        "type": "Rock",
+        "gravity": 1.71,
+        "temperature": "Frozen",
+        "atmosphere": "EXTR N2",
+        "magnetosphere": "Very Strong",
+        "traits": ["UNK","UNK"],
+        "resources": {
+          "Water": true,
+          "Nickel": true,
+		  "Iron":true",
+		  "Cobalt":true,
+		  "Alkanes":true,
+		  "Platinum":true,
+		  "Palladium":true,
+		  "Ytterbium":true
+        }
+      },
+	  {
+        "name": "Tau Ceti VI",
+        "type": "Barren",
+        "gravity": 0.87,
+        "temperature": "Frozen",
+        "atmosphere": "None",
+        "magnetosphere": "Weak",
+        "traits": ["None"],
+        "resources": {
+          "Helium-3": true,
+          "Aluminum": true,
+		  "Beryllium":true,
+		  "Neodymium":true
+        }
+      },
+	  {
+        "name": "Tau Ceti VI-a",
+        "type": "Barren",
+        "gravity": 0.08,
+        "temperature": "Frozen",
+        "atmosphere": "None",
+        "magnetosphere": "None",
+        "traits": ["None"],
+        "resources": {
+          "Helium-3": true,
+		  "Iron":true,
+		  "Tantalum":true
+        }
+      },
+	  {
+        "name": "Tau Ceti VII",
+        "type": "Barren",
+        "gravity": 0.93,
+        "temperature": "Deep Freeze",
+        "atmosphere": "None",
+        "magnetosphere": "Average",
+        "traits": ["None"],
+        "resources": {
+          "Helium-3": true,
+		  "Aluminum":true
+        }
+      },
+	  {
+        "name": "Tau Ceti VII-a",
+        "type": "Barren",
+        "gravity": 0.11,
+        "temperature": "Deep Freeze",
+        "atmosphere": "None",
+        "magnetosphere": "Average",
+        "traits": ["None"],
+        "resources": {
+          "Helium-3": true,
+		  "Aluminum":true,
+		  "Beryllium":true,
+		  "Europium":true
+        }
+      },
+	  {
+        "name": "Tau Ceti VIII-a",
+        "type": "Ice",
+        "gravity": 0.11,
+        "temperature": "Deep Freeze",
+        "atmosphere": "None",
+        "magnetosphere": "Average",
+        "traits": ["None"],
+        "resources": {
+          "Water": true,
+		  "Copper":true
+        }
+      },
+	  {
+        "name": "Tau Ceti VIII-b",
+        "type": "Rock",
+        "gravity": 1.00,
+        "temperature": "Temperate",
+        "atmosphere": "Thin O2",
+        "magnetosphere": "Average",
+        "traits": [""],
+        "resources": {
+          "Water": true,
+          "Iron": true,
+          "Alkanes": true
+        },
+        "fauna": [
+          {
+            "name": "Herding Cagebrain Herbivore",
+            "Temperament": "Skittish",
+            "biomes": ["tropical Forest, Deciduous Forest"],
+			"outpost" : false,
+            "resources": {
+              "Sealant": true
+            }
+          },
+          {
+            "name": "Hunting Cricket",
+            "Temperament": "Fearless",
+            "biomes": ["Tropical Forest, Deciduous Forest"],
+			"outpost" : false,
+            "resources": {
+              "Hypercatalyst": true
+            }
+          },
+          {
+            "name": "Trilobite Filterer",
+            "Temperament": "Wary",
+            "biomes": ["Tropical Forest, Deciduous Forest"],
+			"outpost":false,
+            "resources": {
+              "Nutrient": true
+            }
+          },
+          {
+            "name": "Centiskull Filterer",
+            "Temperament": "Wary",
+            "biomes": ["Hills"]
+			"outpost":false,
+            "resources": {
+              "Fiber": true
+            }
+		  },
+          {
+            "name": "Mayfly Filterer",
+            "Temperament": "Peaceful",
+            "biomes": ["Mountains", "Tropical Forest", "Frozen Plains", "Deciduous Forest","Savanna"]
+			"outpost":false,
+            "resources": {
+              "Membrane": true
+            }
+		  },
+		  {
+            "name": "Flocking Trihorn Grazer",
+            "Temperament": "Defensive",
+            "biomes": ["Mountains","Savanna"]
+			"outpost":false,
+            "resources": {
+              "Ornamental": true
+            }
+		  },
+		  {
+            "name": "Pack Anklyosaurus",
+            "Temperament": "Defensive",
+            "biomes": ["Mountains","Savanna"]
+			"outpost":false,
+            "resources": {
+              "Analgesic": true
+            }
+		  },
+		  {
+            "name": "Beetle Filterer",
+            "Temperament": "Skittish",
+            "biomes": ["Mountains","Savanna"]
+			"outpost":false,
+            "resources": {
+              "Toxin": true
+            }
+		  },
+          // Add more fauna if needed
+        ],
+        "flora": [
+          {
+            "name": "Moth Vine",
+            "biomes": ["Tropical Forest, Deciduous Forest"],
+            "outpost": false,
+            "resources": {
+              "Metabolic Agent": true
+            }
+          },
+          {
+            "name": "Cage Brain",
+            "biomes": ["Tropical Forest, Deciduous Forest"],
+            "outpost": false,
+            "resources": {
+              "Structural": true
+            }
+          },
+          {
+            "name": "Sweet Root",
+            "biomes": ["Mountains", Deciduous Forest"],
+            "outpost": true,
+            "resources": {
+              "Toxin": true
+            }
+          },
+		  {
+            "name": "Aurora Palm",
+            "biomes": ["Mountains","Savanna"],
+            "outpost": false,
+            "resources": {
+              "Fiber": true
+            }
+          },
+		  {
+            "name": "Cliff Laurel",
+            "biomes": ["Mountains","Savanna"],
+            "outpost": true,
+            "resources": {
+              "Cosmetic": true
+            }
+          },
+		  {
+            "name": "Cliffberry",
+            "biomes": ["Mountains","Savanna"],
+            "outpost": true,
+            "resources": {
+              "Nutrient": true
+            }
+          },
+          // Add more flora if needed
+        ]
+		},
+	  {
+        "name": "Tau Ceti VII-c",
+        "type": "Barren",
+        "gravity": 0.11,
+        "temperature": "Deep Freeze",
+        "atmosphere": "None",
+        "magnetosphere": "Average",
+        "traits": ["None"],
+        "resources": {
+          "Helium-3": true,
+		  "Aluminum":true,
+		  "Beryllium":true,
+		  "Europium":true
+        }
+      },
+	  
+    ]
+  }
+]

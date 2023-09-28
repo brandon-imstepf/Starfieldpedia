@@ -1,0 +1,106 @@
+{
+  "crafting_recipes": {
+    "suit": [
+      {
+        "name": "Basic Suit",
+        "requirements": [
+          {"resource": "Fabric", "quantity": 2},
+          {"resource": "Plastic", "quantity": 1}
+        ]
+      },
+      {
+        "name": "Advanced Suit",
+        "requirements": [
+          {"resource": "Advanced Fabric", "quantity": 3},
+          {"resource": "Steel", "quantity": 2}
+        ]
+      },
+      // Add more suit recipes
+    ],
+    "weapons": [
+      {
+        "name": "Pistol",
+        "requirements": [
+          {"resource": "Steel", "quantity": 1},
+          {"resource": "Gunpowder", "quantity": 1}
+        ]
+      },
+      {
+        "name": "Assault Rifle",
+        "requirements": [
+          {"resource": "Steel", "quantity": 3},
+          {"resource": "Gunpowder", "quantity": 2}
+        ]
+      },
+      // Add more weapons recipes
+    ],
+    "chems": [
+      {
+        "name": "Health Potion",
+        "requirements": [
+          {"resource": "Herbs", "quantity": 2},
+          {"resource": "Water", "quantity": 1}
+        ]
+      },
+      {
+        "name": "Stamina Elixir",
+        "requirements": [
+          {"resource": "Mushrooms", "quantity": 3},
+          {"resource": "Energy Crystal", "quantity": 1}
+        ]
+      },
+      // Add more chems recipes
+    ],
+    "module": [
+      {
+        "name": "Energy Module",
+        "requirements": [
+          {"resource": "Circuit Board", "quantity": 2},
+          {"resource": "Energy Crystal", "quantity": 1}
+        ]
+      },
+      {
+        "name": "Storage Module",
+        "requirements": [
+          {"resource": "Plastic", "quantity": 2},
+          {"resource": "Metal", "quantity": 3}
+        ]
+      },
+      // Add more module recipes
+    ],
+    "cooking": [
+      {
+        "name": "Bread",
+        "requirements": [
+          {"resource": "Flour", "quantity": 2},
+          {"resource": "Water", "quantity": 1}
+        ]
+      },
+      {
+        "name": "Stew",
+        "requirements": [
+          {"resource": "Meat", "quantity": 2},
+          {"resource": "Vegetables", "quantity": 2}
+        ]
+      },
+      // Add more cooking recipes
+    ],
+    "research": [
+      {
+        "name": "Research Paper",
+        "requirements": [
+          {"resource": "Paper", "quantity": 1},
+          {"resource": "Ink", "quantity": 1}
+        ]
+      },
+      {
+        "name": "Advanced Experiment",
+        "requirements": [
+          {"resource": "Lab Equipment", "quantity": 2},
+          {"resource": "Rare Materials", "quantity": 3}
+        ]
+      }
+      // Add more research recipes
+    ]
+  }
+}

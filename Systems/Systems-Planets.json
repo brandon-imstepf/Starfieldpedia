@@ -1,0 +1,772 @@
+
+  "systems": [
+  {
+	  "Name" : "Alpha Centauri",
+	  "planets": 
+	[
+		{
+			  "name": "Jemison",
+			  "type": "Rock",
+			  "gravity": 0.91,
+			  "temperature": "Temperate",
+			  "atmosphere": "STD O2",
+			  "magnetosphere": "Strong",
+			  "traits": ["UNK", "UNK", "UNK"],
+			  "has_fauna": true
+			  "has_flora": true
+			  "resources": {
+				"Water": true,
+				"Chlorine": true,
+				"Argon" : true,
+				"Lead" : true,
+				"Chlorosilanes" : true,
+			  },
+			  "fauna": [
+				{
+				  "name": "Pack Coralbug",
+				  "Temperament" : "Wary"
+				  "biomes": ["Mountains", "Deciduous Forest",],
+				  "resources": {
+					"Membrane": true
+				  }
+				},
+				{
+				  "name": "Herding Cutterhead Herbivore",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Mountains", "Deciduous Forest"],
+				  "resources": {
+					"Sealant": true
+				  }
+				},
+				{
+				  "name": "Carasnail Scavenger",
+				  "Temperament" : "Peaceful"
+				  "biomes": ["Mountains", "Deciduous Forest"],
+				  "resources": {
+					"Cosmetic": true
+				  }
+				},
+				{
+				  "name": "Flocking Seabat Geophage",
+				  "Temperament" : "Peaceful"
+				  "biomes": ["Mountains", "Deciduous Forest"],
+				  "resources": {
+					"Metabolic Agent": true
+				  }
+				},
+				{
+				  "name": "Hunting Tuskfrog",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Mountains", "Deciduous Forest"],
+				  "resources": {
+					"Sedative": true
+				  }
+				},
+				{
+				  "name": "Apex Parrothawk",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Frozen Mountains", "Mountains", "Deciduous Forest", "Coniferous Forest"],
+				  "resources": {
+					"Structural": true
+				  }
+				},
+				{
+				  "name": "Herding Reefwalker Scavenger",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Frozen Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Beetle Grazer",
+				  "Temperament" : "Skittish"
+				  "biomes": ["Frozen Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Metabolic Agent": true
+				  }
+				},
+				{
+				  "name": "Apex Crocodaunt",
+				  "Temperament" : "Territorial"
+				  "biomes": ["Frozen Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Spice": true
+				  }
+				},
+				// Add more fauna if needed
+			  ],
+			  "flora": [
+				{
+				  "name": "Aurora Palm",
+				  "biomes": ["Deciduous Forest", "Mountains",],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Glossy Stickweed",
+				  "biomes": ["Deciduous Forest", "Coniferous Forest", "Mountains"],
+				  "resources": {
+					"Structural": true
+				  }
+				},
+				{
+				  "name": "Cliff Laurel",
+				  "biomes": ["Frozen Mountains, "Mountains", "Deciduous Forest", "Coniferous Forest"],
+				  "resources": {
+					"Nutrient": true
+				  }
+				},
+				{
+				  "name": "Boreas Root",
+				  "biomes": ["Frozen Mountains, "Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Fiber": true
+				  }
+				},
+				{
+				  "name": "Broadleaf Roase",
+				  "biomes": ["Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Nutrient": true
+				  }
+				},
+				{
+				  "name": "Cold Cave Nettle",
+				  "biomes": ["Frozen Mountains, "Mountains"],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Spiral Creeper",
+				  "biomes": ["Deciduous Forest", "Coniferous Forest"],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Tufted Snow Willow",
+				  "biomes": ["Frozen Mountains, "Mountains", "Coniferous Forest"],
+				  "resources": {
+					"Metabolic Agent": true
+				  }
+				},
+				// Add more flora if needed
+				
+			  ] // End Fauna/Flora for Jemison
+			  
+			{
+			  "name": "Kurtz",
+			  "type": "Barren",
+			  "gravity": 0.11,
+			  "temperature": "Temperate",
+			  "atmosphere": "None",
+			  "magnetosphere": "None",
+			  "traits": ["None"],
+			  "resources": {
+				"Helium-3": true,
+				"Aluminum": true,
+			  }
+			},
+			
+			{
+			  "name": "Bondar",
+			  "type": "Rock",
+			  "gravity": 1.84,
+			  "temperature": "Inferno",
+			  "atmosphere": "EXTR CO2",
+			  "magnetosphere": "Powerful",
+			  "traits": ["Charred Ecosystem", "UNK","UNK"],
+			  "resources": {
+				"Chlorine": true,
+				"Nickel": true,
+				"Lead" : true,
+				"Tungsten" : true,
+				"Platinum" : true,
+				"Xenon" : true,
+			  }
+			},
+			
+			{
+			  "name": "Grissom",
+			  "type": "Barren",
+			  "gravity": 0.29,
+			  "temperature": "Inferno",
+			  "atmosphere": "None",
+			  "magnetosphere": "None",
+			  "traits": ["None"],
+			  "resources": {
+				"Helium-3": true,
+				"Iron": true,
+			  }
+			},	
+			
+			{
+			  "name": "Curbeam",
+			  "type": "Barren",
+			  "gravity": 0.18,
+			  "temperature": "Inferno",
+			  "atmosphere": "None",
+			  "magnetosphere": "None",
+			  "traits": ["None"],
+			  "resources": {
+				"Helium-3": true,
+				"Aluminum": true,
+			  }
+			},
+		
+			{
+			  "name": "Hawley",
+			  "type": "Rock",
+			  "gravity": 0.50,
+			  "temperature": "Frozen",
+			  "atmosphere": "Thin M",
+			  "magnetosphere": "None",
+			  "traits": ["Pelted Fields"],
+			  "resources": {
+				"Water": true,
+				"Nickel": true,
+				"Lead" : true,
+				"Uranium" : true,
+				"Cobalt" : true,
+			  }
+			},
+			
+			{
+			  "name": "Zamka",
+			  "type": "Rock",
+			  "gravity": 0.42,
+			  "temperature": "Frozen",
+			  "atmosphere": "Thin M",
+			  "magnetosphere": "None",
+			  "traits": ["UNK","UNK"],
+			  "resources": {
+				"Water": true,
+				"Helium-3" : true,
+				"Copper": true,
+				"Nickel": true,
+				"Iron" : true,
+				"Uranium" : true,
+				"Cobalt" : true,
+				"Vanadium": true,
+			  }
+			},
+			
+			{
+			  "name": "Lovell",
+			  "type": "Ice",
+			  "gravity": 0.08,
+			  "temperature": "Frozen",
+			  "atmosphere": "None",
+			  "magnetosphere": "None",
+			  "traits": ["UNK"],
+			  "resources": {
+				"Water": true,
+				"Nickel": true,
+				"Cobalt" : true,
+			  }
+			},
+			{
+			  "name": "Chawla",
+			  "type": "Ice",
+			  "gravity": 0.43,
+			  "temperature": "Frozen",
+			  "atmosphere": "Thin CO2",
+			  "magnetosphere": "None",
+			  "traits": ["None"],
+			  "resources": {
+				"Water": true,
+				"Argon": true,
+				"Benzene" : true,
+			  }
+			},
+			{
+			  "name": "Voss",
+			  "type": "Rock",
+			  "gravity": 0.41,
+			  "temperature": "Frozen",
+			  "atmosphere": "Thin N2",
+			  "magnetosphere": "None",
+			  "traits": ["Solar Storm Seasons"],
+			  "resources": {
+				"Water": true,
+				"Nickel": true,
+				"Lead" : true,
+				"Uranium" : true,
+				"Cobalt" : true,
+				"Tungsten" : true,
+				"Vanadium" : true,
+				"Dysprosium" : true,
+			  }
+			},
+			{
+			  "name": "Gagarin",
+			  "type": "Rock",
+			  "gravity": 0.89,
+			  "temperature": "Temperate",
+			  "atmosphere": "High O2",
+			  "magnetosphere": "Powerful",
+			  "traits": ["Coralline Landmass"],
+			  "resources": {
+				"Water": true,
+				"Chlorine": true,
+				"Lead" : true,
+				"Chlorosilanes" : true,
+			  }
+			  	"fauna": [
+				{
+				  "name": "Flocking Coralcrawler Geophase",
+				  "Temperament" : "Wary"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Nutrient": true
+				  }
+				},
+				{
+				  "name": "Apex Dust Devil Exorunner",
+				  "Temperament" : "Defensive"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Antimicrobial": true
+				  }
+				},
+				{
+				  "name": "Herding Coralbucket Filterer",
+				  "Temperament" : "Territorial"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Cosmetic": true
+				  }
+				},
+				{
+				  "name": "Pack Prong Wing Seabat",
+				  "Temperament" : "Wary"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Metabolic Agent": true
+				  }
+				},
+				{
+				  "name": "Flocking Shardhopper Geophage",
+				  "Temperament" : "Wary"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Toxin": true
+				  }
+				},
+				{
+				  "name": "Trilobite Scavenger",
+				  "Temperament" : "Skittish"
+				  "biomes": ["Swamp", "Rocky Desert","Wetlands"],
+				  "resources": {
+					"Spice": true
+				  }
+				},
+				{
+				  "name": "UNK",
+				  "Temperament" : "UNK"
+				  "biomes": ["UNK"],
+				  "resources": {
+					"UNK": true
+				  }
+				},
+				{
+				  "name": "UNK",
+				  "Temperament" : "UNK"
+				  "biomes": ["UNK"],
+				  "resources": {
+					"UNK": true
+				  }
+				},
+				// Add more fauna if needed
+			  ],
+			  "flora": [
+				{
+				  "name": "Sweetwater Cactus",
+				  "biomes": ["Swamp", "Rocky Desert"],
+				  "outpost" : true
+				  "inputs" : ["Water"]
+				  "resources": {
+					"Adhesive": true
+				  }
+				},
+				{
+				  "name": "Velvet Bloom",
+				  "biomes": ["Swamp","Wetlands"],
+				  "resources": {
+					"Fiber": true
+				  }
+				},
+				{
+				  "name": "Swamp Bottle Root",
+				  "biomes": ["Swamp","Wetlands"],
+				  "outpost" : true
+				  "inputs" : ["Water"]
+				  "resources": {
+					"Sealant": true
+				  }
+				},
+				{
+				  "name": "UNK",
+				  "biomes": ["UNK"],
+				  "resources": {
+					"UNK": true
+				  }
+				},
+				{
+				  "name": "UNK",
+				  "biomes": ["UNK"],
+				  "resources": {
+					"UNK": true
+				  }
+				},
+				// Add more flora if needed
+				
+			  ] // End Fauna/Flora for Gagarin
+			}, // End Gagarin
+	
+		}
+	]
+    {
+      "name": "Valo",
+      "planets": [
+        {
+          "name": "Hillex",
+          "type": "Barren",
+          "gravity": 1.31,
+          "temperature": "Deep Freeze",
+          "atmosphere": "None",
+          "magnetosphere": "Very Strong",
+          "traits": ["Gravitational Anomoly"],
+          "resources": {
+			"Aluminum" : true
+			"Helium-3" : true
+            // Only include resources that are true on this planet
+          }
+        },
+        {
+          "name": "Planet B",
+          "type": "Desert",
+          "gravity": 0.9,
+          "temperature": "Hot",
+          "atmosphere": "Thin",
+          "magnetosphere": "Weak",
+          "traits": ["Trait 2", "Trait 4", "Trait 5"],
+          "resources": {
+            // Resources for Planet B
+          }
+        },
+        // Add more planets for System 1 if needed
+      ]
+    },
+{
+  "name": "Syrma",
+  "planets": [
+    {	    
+		{
+      "name": "Syrma I",
+      "type": "Rock",
+      "gravity": 1.31,
+      "temperature": "Inferno",
+      "atmosphere": "EXTR CO2",
+      "magnetosphere": "Average",
+      "traits": ["UNK, UNK, UNK"],
+      "resources": {
+        "Nickel": true,
+        "Lead": true,
+        "Uranium": true,
+		"Cobalt" : true,
+      }
+    },
+		{
+      "name": "Syrma I-a",
+      "type": "Barren",
+      "gravity": 0.15,
+      "temperature": "Inferno",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": {
+        "Helium-3": true,
+        "Aluminum": true,
+      }
+	}
+		{
+      "name": "Syrma I-b",
+      "type": "Barren",
+      "gravity": 0.21,
+      "temperature": "Inferno",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": 	{
+        "Helium-3": true,
+        "Aluminum": true,
+		"Beryllium":true,
+		}
+	},
+	    {
+      "name": "Syrma II",
+      "type": "Barren",
+      "gravity": 0.8,
+      "temperature": "Inferno",
+      "atmosphere": "STD CO2",
+      "magnetosphere": "Powerful",
+      "traits": ["None"],
+      "resources": {
+        "Chlorine": true,
+        "Nickel": true,
+        "Iron": true,
+        "Uranium": true,
+        "Chlorosilanes": true,
+        "Alkanes": true,
+        "Platinum": true,
+        "Plutonium": true
+      }
+    },
+	  {
+      "name": "Syrma II-a",
+      "type": "Barren",
+      "gravity": 0.27,
+      "temperature": "Inferno",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": {
+        "Helium-3": true,
+        "Aluminum": true,
+        "Beryllium": true
+      }
+    },
+      "name": "Syrma III",
+      "type": "Rock",
+      "gravity": 0.38,
+      "temperature": "Temperate",
+      "atmosphere": "Thin O2",
+      "magnetosphere": "Weak",
+      "traits": ["Gravitational Anomaly"],
+	  "has_fauna": true
+	  "has_flora": true
+      "resources": {
+        "Water": true,
+        "Helium-3": true,
+        "Aluminum": true,
+        "Nickel": true,
+        "Argon": true,
+        "Benzene": true,
+        "Cobalt": true,
+        "Carboxylic Acids": true
+      },
+      "fauna": [
+        {
+          "name": "Flocking Earback Grazer",
+          "biomes": ["Volcanic", "Mountains", "Deciduous Forest", "Coniferous Forest", "Hills", "Craters"],
+          "resources": {
+            "Cosmetic": true
+          }
+        },
+        {
+          "name": "Hunting Brainblimp",
+          "biomes": ["Volcanic", "Mountains", "Deciduous Forest", "Coniferous Forest", "Hills", "Craters"],
+          "resources": {
+            "Sealant": true
+          }
+        },
+        {
+          "name": "Worm Geophage",
+          "biomes": ["Volcanic", "Mountains", "Deciduous Forest", "Coniferous Forest", "Hills", "Craters"],
+          "resources": {
+            "Fiber": true
+          }
+        }
+        // Add more fauna for Syrma III if needed
+      ],
+      "flora": [
+        {
+          "name": "Blood Palm",
+          "biomes": ["Volcanic", "Hills", "Craters"],
+          "resources": {
+            "Toxin": true
+          }
+        },
+        {
+          "name": "Atlas Weed",
+          "biomes": ["Deciduous Forest", "Coniferous Forest", "Hills"],
+          "resources": {
+            "Structural": true
+          }
+        },
+        {
+          "name": "Cliff Laurel",
+          "biomes": ["Mountains"],
+          "resources": {
+            "Structural": true
+          }
+        },
+        {
+          "name": "Bowing Shadeleaf",
+          "biomes": ["Volcanic", "Mountains", "Hills", "Craters"],
+          "resources": {
+            "Nutrient": true
+          }
+        }
+        // Add more flora for Syrma III if needed
+      ]
+    },
+		{
+      "name": "Syrma IV",
+      "type": "Rock",
+      "gravity": 0.54,
+      "temperature": "Cold",
+      "atmosphere": "Thin M",
+      "magnetosphere": "Average",
+      "traits": ["Aeriform Life", "UNK"],
+      "resources": {
+        "Water": true,
+        "Aluminum": true,
+		"Argon" : true,
+      }
+	}
+		{
+      "name": "Syrma IV-a",
+      "type": "Barren",
+      "gravity": 0.22,
+      "temperature": "Cold",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["Bolide Bombardment"],
+      "resources": {
+        "Helium-3": true,
+        "Aluminum": true,
+      }
+	},
+	
+	    {
+      "name": "Syrma V",
+      "type": "Rock",
+      "gravity": 0.79,
+      "temperature": "Cold",
+      "atmosphere": "STD M",
+      "magnetosphere": "Average",
+      "traits": ["None"],
+      "resources": {
+        "Water": true,
+        "Copper": true,
+        "Nickel": true,
+        "Uranium": true,
+        "Fluorine": true,
+        "Iridium": true,
+        "Tetrafluorides": true,
+        "Platinum": true
+      }
+    },
+	   {
+      "name": "Syrma V-a",
+      "type": "Barren",
+      "gravity": 0.4,
+      "temperature": "Cold",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": {
+        "Helium-3": true,
+        "Iron": true
+      }
+    },
+	    {
+      "name": "Syrma VI-c",
+      "type": "Rock",
+      "gravity": 0.64,
+      "temperature": "Cold",
+      "atmosphere": "STD O2",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": {
+        "Water": true,
+        "Lead": true,
+        "Nickel": true,
+        "Iron": true,
+        "Uranium": true,
+        "Platinum": true,
+        "Tantalum": true,
+        "Ytterbium": true
+      }
+    },
+    {
+      "name": "Syrma VI-a",
+      "type": "Ice",
+      "gravity": 0.09,
+      "temperature": "Frozen",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": {
+        "Water": true,
+        "Nickel": true
+      }
+    },
+    {
+      "name": "Syrma VI-b",
+      "type": "Ice",
+      "gravity": 0.22,
+      "temperature": "Frozen",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": {
+        "Water": true,
+        "Lead": true
+      }
+    },
+    {
+      "name": "Syrma VI-d",
+      "type": "Ice",
+      "gravity": 0.02,
+      "temperature": "Frozen",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": {
+        "Water": true,
+        "Argon": true,
+        "Carboxylic Acids": true
+      },
+	},
+    {
+      "name": "Syrma VII-b",
+      "type": "Ice",
+      "gravity": 0.09,
+      "temperature": "Deep Freeze",
+      "atmosphere": "None",
+      "magnetosphere": "None",
+      "traits": ["None"],
+      "resources": {
+        "Water": true,
+        "Argon": true
+      }
+    },
+    {
+      "name": "Syrma VII-a",
+      "type": "Rock",
+      "gravity": 0.5,
+      "temperature": "Temperate",
+      "atmosphere": "STD O2",
+      "magnetosphere": "Average",
+      "traits": ["None"],
+      "resources": {
+        "Water": true,
+        "Chlorine": true,
+        "Nickel": true,
+        "Argon": true,
+        "Chlorosilanes": true,
+        "Cobalt": true,
+        "Lithium": true,
+        "Platinum": true
+      }
+    },
+	]
+}
+
+

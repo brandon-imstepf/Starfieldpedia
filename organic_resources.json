@@ -1,0 +1,149 @@
+{
+    "resources": [
+        {
+            "name": "Adhesive",
+            "cost": 12,
+            "rarity": 2
+        },
+        {
+            "name": "Amino Acids",
+            "cost": 10,
+            "rarity": 2
+        },
+        {
+            "name": "Analgesic",
+            "cost": 12,
+            "rarity": 2
+        },
+        {
+            "name": "Antimicrobial",
+            "cost": 10,
+            "rarity": 1
+        },
+        {
+            "name": "Aromatic",
+            "cost": 11,
+            "rarity": 2
+        },
+        {
+            "name": "Biosuppressant",
+            "cost": 16,
+            "rarity": 3
+        },
+        {
+            "name": "Cosmetic",
+            "cost": 8,
+            "rarity": 1
+        },
+        {
+            "name": "Fiber",
+            "cost": 4,
+            "rarity": 0
+        },
+        {
+            "name": "Gastronomic Delight",
+            "cost": 66,
+            "rarity": 4
+        },
+        {
+            "name": "Hallucinogen",
+            "cost": 14,
+            "rarity": 2
+        },
+        {
+            "name": "High-Tensile Spidroin",
+            "cost": 62,
+            "rarity": 4
+        },
+        {
+            "name": "Hypercataylst",
+            "cost": 18,
+            "rarity": 3
+        },
+        {
+            "name": "Lubricant",
+            "cost": 18,
+            "rarity": 3
+        },
+        {
+            "name": "Luxury Textile",
+            "cost": 58,
+            "rarity": 4
+        },
+        {
+            "name": "Membrane",
+            "cost": 9,
+            "rarity": 1
+        },
+        {
+            "name": "Memory Substrate",
+            "cost": 65,
+            "rarity": 0
+        },
+        {
+            "name": "Metabolic Agent",
+            "cost": 9,
+            "rarity": 0
+        },
+        {
+            "name": "Neurologic",
+            "cost": 67,
+            "rarity": 4
+        },
+        {
+            "name": "Nutrient",
+            "cost": 5,
+            "rarity": 0
+        },
+        {
+            "name": "Ornamental",
+            "cost": 1,
+            "rarity": 1
+        },
+        {
+            "name": "Pigment",
+            "cost": 10,
+            "rarity": 1
+        },
+        {
+            "name": "Polymer",
+            "cost": 20,
+            "rarity": 0
+        },
+        {
+            "name": "Sealant",
+            "cost": 6,
+            "rarity": 0
+        },
+        {
+            "name": "Sedative",
+            "cost": 12,
+            "rarity": 2
+        },
+        {
+            "name": "Solvent",
+            "cost": 19,
+            "rarity": 3
+        },
+        {
+            "name": "Spice",
+            "cost": 11,
+            "rarity": 1
+        },
+        {
+            "name": "Stimulant",
+            "cost": 20,
+            "rarity": 4
+        },
+        {
+            "name": "Structural",
+            "cost": 7,
+            "rarity": 0
+        },
+        {
+            "name": "Toxin",
+            "cost": 8,
+            "rarity": 0
+        }
+    ]
+}

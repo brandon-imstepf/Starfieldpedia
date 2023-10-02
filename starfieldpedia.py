@@ -1,39 +1,71 @@
-# Brandon Imstepf
-# bimstepf1@gmail.com
-
-"""
-The goal of this program is, given all systems and their respective
-planets in Bethesda Softwork's video game Starfield, find the optimal
-system to build your outposts in to minimize Helium-3 Cargo Link usage.
-
-Also to serve as a source of information for Starfield's many plaents.
-
-"""
-
 import os
 import json
-import tkinter as tk
-import glob
+import pandas as pd
+from tkinter import Tk, Listbox
 
-def load_json_from_file(directory, filename):
-    with open(os.path.join(directory, filename), 'r') as file:
-        data = json.load(file)
-    return data
 
-# Example Usage
-system_data = load_json_from_file("systems", "tau_ceti.json")
-print(system_data)
+def lowercase_keys(input_dict):
+    """
+    Recursively convert all keys in dictionary to lowercase.
+    """
+    if not isinstance(input_dict, dict):
+        return input_dict
 
-def load_all_json_from_directory(directory):
-    all_data = []
-    
-    for filename in os.listdir(directory):
-        if filename.endswith(".json"):
-            file_data = load_json_from_file(directory, filename)
-            all_data.append(file_data)
-            
-    return all_data
+    lowercased_dict = {}
+    for k, v in input_dict.items():
+        if isinstance(v, dict):
+            v = lowercase_keys(v)
+        elif isinstance(v, list):
+            v = [lowercase_keys(item) if isinstance(item, dict) else item for item in v]
+        lowercased_dict[k.lower()] = v
+    return lowercased_dict
 
-# Example Usage
-all_system_data = load_all_json_from_directory("systems")
-print(all_system_data)
+
+# Load data from all JSON files within the "systems" directory
+data = []
+systems_directory = 'systems'
+
+for file in os.listdir(systems_directory):
+    if file.endswith(".json"):
+        filepath = os.path.join(systems_directory, file)
+        print(f"Processing file: {filepath}")  # Printing the filename
+        with open(filepath, 'r') as f:
+            content = f.read()
+            try:
+                content_json = json.loads(content)
+                content_json = lowercase_keys(content_json)
+                for system_data in content_json['systems']:
+                    data.extend(system_data['planets'])
+            except json.JSONDecodeError:
+                print(f"Error decoding JSON in file: {filepath}")
+                print(content)  # Printing the content of the problematic file
+                continue  # Skip this file and move to the next one
+            except KeyError:
+                print(f"KeyError encountered in file: {filepath}")
+                print(content)  # Print the content of the file causing the KeyError
+                continue
+
+# Convert data to DataFrame
+try:
+    df = pd.DataFrame(data)
+except Exception as e:
+    print(f"Error while converting data to DataFrame: {e}")
+    print(data)  # Print the content of 'data' to check for issues
+
+# Create a simple tkinter window to display planet names
+root = Tk()
+root.title("Planet List")
+root.geometry("300x400")
+
+# Add planet names to a listbox
+listbox = Listbox(root)
+try:
+    for planet_name in df['name'].tolist():
+        listbox.insert("end", planet_name)
+except KeyError:
+    print("KeyError encountered while populating listbox.")
+    print(df.head())  # Print the first few rows of the DataFrame to inspect it
+
+listbox.pack(pady=20)
+
+root.mainloop()

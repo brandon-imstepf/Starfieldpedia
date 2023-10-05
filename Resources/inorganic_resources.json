@@ -127,7 +127,7 @@
         "value": 40,
         "color": "#9FD0CD"
     },
-    "Fluorine": {
+    "Flourine": {
         "element_name": "F",
         "rarity": 1,
         "state_of_matter": "Gas",
@@ -287,7 +287,7 @@
         "value": 52,
         "color": "#FBDC4C"
     },
-    "Tetrafluorides": {
+    "Tetraflourides": {
         "element_name": "xF4",
         "rarity": 2,
         "state_of_matter": "Gas",

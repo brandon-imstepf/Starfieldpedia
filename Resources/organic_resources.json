@@ -1,149 +1,118 @@
 {
-    "resources": [
-        {
-            "name": "Adhesive",
-            "cost": 12,
-            "rarity": 2
-        },
-        {
-            "name": "Amino Acids",
-            "cost": 10,
-            "rarity": 2
-        },
-        {
-            "name": "Analgesic",
-            "cost": 12,
-            "rarity": 2
-        },
-        {
-            "name": "Antimicrobial",
-            "cost": 10,
-            "rarity": 1
-        },
-        {
-            "name": "Aromatic",
-            "cost": 11,
-            "rarity": 2
-        },
-        {
-            "name": "Biosuppressant",
-            "cost": 16,
-            "rarity": 3
-        },
-        {
-            "name": "Cosmetic",
-            "cost": 8,
-            "rarity": 1
-        },
-        {
-            "name": "Fiber",
-            "cost": 4,
-            "rarity": 0
-        },
-        {
-            "name": "Gastronomic Delight",
-            "cost": 66,
-            "rarity": 4
-        },
-        {
-            "name": "Hallucinogen",
-            "cost": 14,
-            "rarity": 2
-        },
-        {
-            "name": "High-Tensile Spidroin",
-            "cost": 62,
-            "rarity": 4
-        },
-        {
-            "name": "Hypercataylst",
-            "cost": 18,
-            "rarity": 3
-        },
-        {
-            "name": "Lubricant",
-            "cost": 18,
-            "rarity": 3
-        },
-        {
-            "name": "Luxury Textile",
-            "cost": 58,
-            "rarity": 4
-        },
-        {
-            "name": "Membrane",
-            "cost": 9,
-            "rarity": 1
-        },
-        {
-            "name": "Memory Substrate",
-            "cost": 65,
-            "rarity": 0
-        },
-        {
-            "name": "Metabolic Agent",
-            "cost": 9,
-            "rarity": 0
-        },
-        {
-            "name": "Neurologic",
-            "cost": 67,
-            "rarity": 4
-        },
-        {
-            "name": "Nutrient",
-            "cost": 5,
-            "rarity": 0
-        },
-        {
-            "name": "Ornamental",
-            "cost": 1,
-            "rarity": 1
-        },
-        {
-            "name": "Pigment",
-            "cost": 10,
-            "rarity": 1
-        },
-        {
-            "name": "Polymer",
-            "cost": 20,
-            "rarity": 0
-        },
-        {
-            "name": "Sealant",
-            "cost": 6,
-            "rarity": 0
-        },
-        {
-            "name": "Sedative",
-            "cost": 12,
-            "rarity": 2
-        },
-        {
-            "name": "Solvent",
-            "cost": 19,
-            "rarity": 3
-        },
-        {
-            "name": "Spice",
-            "cost": 11,
-            "rarity": 1
-        },
-        {
-            "name": "Stimulant",
-            "cost": 20,
-            "rarity": 4
-        },
-        {
-            "name": "Structural",
-            "cost": 7,
-            "rarity": 0
-        },
-        {
-            "name": "Toxin",
-            "cost": 8,
-            "rarity": 0
-        }
-    ]
+    "Adhesive": {
+        "rarity": 2,
+        "value": 12
+    },
+    "Amino Acids": {
+        "rarity": 2,
+        "value": 10
+    },
+    "Analgesic": {
+        "rarity": 2,
+        "value": 12
+    },
+    "Antimicrobial": {
+        "rarity": 1,
+        "value": 10
+    },
+    "Aromatic": {
+        "rarity": 2,
+        "value": 11
+    },
+    "Biosuppressant": {
+        "rarity": 3,
+        "value": 16
+    },
+    "Cosmetic": {
+        "rarity": 1,
+        "value": 8
+    },
+    "Fiber": {
+        "rarity": 0,
+        "value": 4
+    },
+    "Gastronomic Delight": {
+        "rarity": 4,
+        "value": 66
+    },
+    "Hallucinogen": {
+        "rarity": 2,
+        "value": 14
+    },
+    "High-Tensile Spidroin": {
+        "rarity": 4,
+        "value": 62
+    },
+    "Hypercatalyst": {
+        "rarity": 3,
+        "value": 18
+    },
+    "Lubricant": {
+        "rarity": 3,
+        "value": 18
+    },
+    "Luxury Textile": {
+        "rarity": 4,
+        "value": 58
+    },
+    "Membrane": {
+        "rarity": 1,
+        "value": 9
+    },
+    "Memory Substrate": {
+        "rarity": 0,
+        "value": 65
+    },
+    "Metabolic Agent": {
+        "rarity": 0,
+        "value": 9
+    },
+    "Neurologic": {
+        "rarity": 4,
+        "value": 67
+    },
+    "Nutrient": {
+        "rarity": 0,
+        "value": 5
+    },
+    "Ornamental": {
+        "rarity": 1,
+        "value": 1
+    },
+    "Pigment": {
+        "rarity": 1,
+        "value": 10
+    },
+    "Polymer": {
+        "rarity": 0,
+        "value": 20
+    },
+    "Sealant": {
+        "rarity": 0,
+        "value": 6
+    },
+    "Sedative": {
+        "rarity": 2,
+        "value": 12
+    },
+    "Solvent": {
+        "rarity": 3,
+        "value": 19
+    },
+    "Spice": {
+        "rarity": 1,
+        "value": 11
+    },
+    "Stimulant": {
+        "rarity": 4,
+        "value": 20
+    },
+    "Structural": {
+        "rarity": 0,
+        "value": 4
+    },
+    "Toxin": {
+        "rarity": 0,
+        "value": 8
+    }
 }

@@ -26,6 +26,12 @@ resources_dict = load_resources()
 def on_planet_selected(event):
     """Handle planet selection in the Treeview."""
     item = tree.selection()[0]  # get selected item
+    
+    planet_name = tree.item(item)["values"][0]
+    
+    # If the selected item is not in the dataframe, return early
+    if planet_name not in df['name'].values:
+        return
 
     # Check if the selected item has children already
     if tree.get_children(item):
@@ -57,12 +63,23 @@ def on_planet_selected(event):
             tree.insert(item, "end", text="", values=details_values)
 
 
+def filter_planets_by_resource(resource_name):
+    """Filter planets by the selected resource."""
+    tree.delete(*tree.get_children())  # Clear the current tree view
+    filtered_data = df[df['resources'].apply(lambda x: x.get(resource_name, False))]
+
+    for _, row in filtered_data.iterrows():
+        tree.insert("", "end", values=(row['name'], row.get('type', ''), row.get('gravity', ''), row.get('temperature', ''), row.get('atmosphere', ''), row.get('magnetosphere', '')))
+
+def reset_planet_view():
+    """Reset the planet view to show all planets."""
+    tree.delete(*tree.get_children())  # Clear the current tree view
+    for _, row in df.iterrows():
+        tree.insert("", "end", values=(row['name'], row.get('type', ''), row.get('gravity', ''), row.get('temperature', ''), row.get('atmosphere', ''), row.get('magnetosphere', '')))
 
 
 
-
-
-# Load data from JSON files in the "systems" directory
+# Load data from all JSON files within the "systems" directory
 data = []
 systems_directory = 'systems'
 
@@ -74,7 +91,16 @@ for file in os.listdir(systems_directory):
                 content_json = json.loads(f.read())
                 content_json = lowercase_keys(content_json)
                 for system_data in content_json['systems']:
-                    data.extend(system_data['planets'])
+                    for planet in system_data['planets']:
+                        # Extract resources from fauna and flora
+                        fauna_resources = {res: True for fauna in planet.get('fauna', []) for res, val in fauna.get('resources', {}).items() if val}
+                        flora_resources = {res: True for flora in planet.get('flora', []) for res, val in flora.get('resources', {}).items() if val}
+
+                        # Merge these with main resources
+                        merged_resources = {**planet['resources'], **fauna_resources, **flora_resources}
+                        planet['resources'] = merged_resources
+
+                        data.append(planet)
             except (json.JSONDecodeError, KeyError):
                 # Here, you might want to print the error and/or the file content for debugging
                 continue
@@ -85,6 +111,8 @@ df = pd.DataFrame(data)
 root = Tk()
 root.title("Planet Details")
 root.geometry("800x400")
+
+
 
 # Create and configure Treeview with Scrollbar
 frame = ttk.Frame(root)
@@ -106,5 +134,19 @@ tree.configure(yscrollcommand=scrollbar.set)
 scrollbar.pack(side="right", fill="y")
 
 tree.pack(fill="both", expand=True)
+
+# Creating a Frame for resource buttons on the left side
+button_frame = ttk.Frame(root)
+button_frame.pack(side="left", fill="y", padx=10)
+
+# Generate buttons for each resource in a grid layout
+columns = 6
+for idx, resource in enumerate(resources_dict.keys()):
+    row = idx // columns
+    col = idx % columns
+    ttk.Button(button_frame, text=resource, command=lambda res=resource: filter_planets_by_resource(res)).grid(row=row, column=col, sticky="w", padx=5, pady=5)
+
+# Add a reset button below the grid
+ttk.Button(button_frame, text="Reset", command=reset_planet_view).grid(row=row+1, columnspan=columns, pady=20)
 
 root.mainloop()

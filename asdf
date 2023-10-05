@@ -1,0 +1,29 @@
+[33mcommit a5896bc87b3916de4f96bca558500b1abed3b7a8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Brandon Imstepf <brandon.imstepf@gmail.com>
+Date:   Mon Oct 2 21:15:00 2023 -0700
+
+    master
+
+[33mcommit 2971e79c596c0088f460b329f9cd10d8bff353e4[m
+Author: Brandon Imstepf <brandon.imstepf@gmail.com>
+Date:   Mon Oct 2 14:04:49 2023 -0700
+
+    update json files for real this time
+
+[33mcommit ff1861868b5e0331ab4c712ca3a3e8374653ca57[m
+Author: Brandon Imstepf <brandon.imstepf@gmail.com>
+Date:   Thu Sep 28 15:14:33 2023 -0700
+
+    fixed all current json files, added organic resources
+
+[33mcommit 6a6866968471ff2c57dcba59a01d3682b56c0a0d[m
+Author: Brandon Imstepf <brandon.imstepf@gmail.com>
+Date:   Thu Sep 28 09:51:53 2023 -0700
+
+    Reorganize repository structure
+
+[33mcommit 3857c2a5d43e0c11ed945a8e2eb8505bd34b8a4c[m
+Author: Brandon Imstepf <brandon.imstepf@gmail.com>
+Date:   Wed Sep 27 10:28:32 2023 -0700
+
+    Add Alpha Centauri system data, to start

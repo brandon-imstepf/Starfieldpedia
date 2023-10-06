@@ -61,7 +61,7 @@
         "state_of_matter": "Solid",
         "weight": 0.3,
         "value": 264,
-        "color": "NA"
+        "color": "#FFFFFFF"
     },
     "Caesium": {
         "element_name": "Cs",
@@ -181,7 +181,7 @@
         "state_of_matter": "Solid",
         "weight": 0.6,
         "value": 8,
-        "color": "#"
+        "color": "#75403A"
     },
     "Lead": {
         "element_name": "Pb",

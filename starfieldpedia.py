@@ -10,41 +10,106 @@ def lowercase_keys(input_dict):
 
     return {k.lower(): lowercase_keys(v) for k, v in input_dict.items()}
 
-def load_resources():
-    """Load organic and inorganic resources."""
-    with open("Resources/organic_resources.json", 'r') as org_file:
-        organic_resources = json.load(org_file)
+# def load__resources():
+#     """Load organic and inorganic resources."""
+#     with open("Resources/organic_resources.json", 'r') as org_file:
+#         organic_resources = json.load(org_file)
 
+#     with open("Resources/inorganic_resources.json", 'r') as inorg_file:
+#         inorganic_resources = json.load(inorg_file)
+
+#     return {**organic_resources, **inorganic_resources}
+
+def load_inorganic_resources():
+    """Load inorganic resources."""
     with open("Resources/inorganic_resources.json", 'r') as inorg_file:
-        inorganic_resources = json.load(inorg_file)
+        return json.load(inorg_file)
 
-    return {**organic_resources, **inorganic_resources}
+def load_organic_resources():
+    """Load organic resources."""
+    with open("Resources/organic_resources.json", 'r') as org_file:
+        return json.load(org_file)
 
 # Load resource details
-resources_dict = load_resources()
+inorg_resources_dict = load_inorganic_resources()
+org_resources_dict = load_organic_resources()
 
 def on_planet_selected(event):
     """Handle planet selection in the Treeview."""
     item = tree.selection()[0]  # get selected item
-    
     planet_name = tree.item(item)["values"][0]
-    
-    # If the selected item is not in the dataframe, return early
-    if planet_name not in df['name'].values:
-        return
 
-    # Check if the selected item has children already
+    item_values = tree.item(item)["values"]
+    selected_name = item_values[0]
+    
+    # Check if selected name is a planet
+    if selected_name in df['name'].values:
+        planet_name = selected_name
+    else:
+        # If it's not a planet, then it might be a resource or a header.
+        # Check if the parent of the selected item is a planet.
+        parent_item = tree.parent(item)
+        if parent_item:
+            planet_name = tree.item(parent_item)["values"][0]
+        else:
+            print(f"{selected_name} not found in dataframe")
+            return
+
+    planet_row = df[df['name'] == planet_name].iloc[0]
+
+    # Fetch fauna and flora
+    fauna = planet_row.get("fauna", [])
+    flora = planet_row.get("flora", [])
+
+    # If the selected item has children already
     if tree.get_children(item):
         # If it has children (i.e., details have been previously loaded), remove them
         for child in tree.get_children(item):
             tree.delete(child)
+        return
+    
+    # If double-clicked on an inorganic resource
+    if selected_name in inorg_resources_dict:
+        resource_name = selected_name
+        planet_name = tree.item(tree.parent(item))["values"][0]  # Get the planet's name
+        planet_data = df[df['name'] == planet_name].iloc[0]
+        resource_details = inorg_resources_dict.get(resource_name, {})
+        
+        # ... [Rest of the inorganic resource handling code]
+
+    # If double-clicked on an organic resource
+    elif selected_name in org_resources_dict:
+        resource_name = selected_name
+        planet_name = tree.item(tree.parent(item))["values"][0]  # Get the planet's name
+        planet_data = df[df['name'] == planet_name].iloc[0]
+        resource_details = org_resources_dict.get(resource_name, {})
+
+        # Insert subheaders for fauna/flora details
+        tree.insert(item, "end", text="", values=("Name", "Temperament", "Biomes", "Outpost"))
+
+        # Look for the fauna/flora that provides the resource
+        for fauna in planet_data.get("fauna", []):
+            if fauna["resources"].get(resource_name):
+                outpost_status = fauna.get("outpost", "UNK")
+                tree.insert(item, "end", text="", values=(fauna["name"], fauna["Temperament"], ', '.join(fauna["biomes"]), outpost_status))
+
+        for flora in planet_data.get("flora", []):
+            if flora["resources"].get(resource_name):
+                outpost_status = flora.get("outpost", "UNK")
+                tree.insert(item, "end", text="", values=(flora["name"], "", ', '.join(flora["biomes"]), outpost_status))
+
+    # If double-clicked on a planet
     else:
+        planet_name = item_values[0]
+
+        # If the selected item is not in the dataframe, return early
+        if planet_name not in df['name'].values:
+            return
+        
         # First, insert the sub-headers for resources
         tree.insert(item, "end", text="", values=("Resource Name", "Element", "Rarity", "State", "Weight", "Value"))
         
         # Fetch resources for the planet
-        planet_data = tree.item(item)["values"]
-        planet_name = planet_data[0]
         planet_row = df[df['name'] == planet_name].iloc[0]
         resources = planet_row['resources']
 
@@ -53,14 +118,28 @@ def on_planet_selected(event):
 
         # Insert the resource details beneath the sub-headers
         for resource in available_resources:
-            resource_details = resources_dict.get(resource, {})
+            if resource in inorg_resources_dict:
+                resource_details = inorg_resources_dict.get(resource, {})
+            else:
+                resource_details = org_resources_dict.get(resource, {})
+
             details_values = (resource, 
                               resource_details.get("element_name", ""), 
                               resource_details.get("rarity", ""),
                               resource_details.get("state_of_matter", ""),
                               resource_details.get("weight", ""),
                               resource_details.get("value", ""))
-            tree.insert(item, "end", text="", values=details_values)
+            
+            # Insert the resource with a tag equal to its name
+            tree.insert(item, "end", text="", values=details_values, tags=(resource,))
+            
+            # Configure the row color based on the resource color in the JSON
+            color = resource_details.get("color", "#FFFFFF")  # default to white if no color is specified
+            tree.tag_configure(resource, background=color)
+
+
+
+
 
 
 def filter_planets_by_resource(resource_name):
@@ -140,8 +219,9 @@ button_frame = ttk.Frame(root)
 button_frame.pack(side="left", fill="y", padx=10)
 
 # Generate buttons for each resource in a grid layout
-columns = 6
-for idx, resource in enumerate(resources_dict.keys()):
+columns = 7
+all_resources = list(inorg_resources_dict.keys()) + list(org_resources_dict.keys())
+for idx, resource in enumerate(all_resources):
     row = idx // columns
     col = idx % columns
     ttk.Button(button_frame, text=resource, command=lambda res=resource: filter_planets_by_resource(res)).grid(row=row, column=col, sticky="w", padx=5, pady=5)

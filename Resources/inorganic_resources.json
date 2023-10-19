@@ -373,6 +373,6 @@
         "state_of_matter": "Solid",
         "weight": 1.3,
         "value": 56,
-        "color": ""
+        "color": "#FFFFFFF"
     }
 }
